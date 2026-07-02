@@ -1,0 +1,7 @@
+const data=["Apple","Orange","Banana"];
+
+const [search,setSearch]=useState("");
+
+const result=data.filter(item=>
+item.toLowerCase().includes(search.toLowerCase())
+);

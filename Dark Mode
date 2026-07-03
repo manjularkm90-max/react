@@ -1,0 +1,3 @@
+const [dark,setDark]=useState(false);
+
+<div className={dark?"dark":"light"}>

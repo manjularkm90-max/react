@@ -1,0 +1,17 @@
+import { useState, useCallback } from "react";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  const increment = useCallback(() => {
+    setCount(prev => prev + 1);
+  }, []);
+
+  return (
+    <button onClick={increment}>
+      {count}
+    </button>
+  );
+}
+
+export default App;

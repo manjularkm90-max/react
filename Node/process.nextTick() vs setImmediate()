@@ -1,0 +1,5 @@
+setImmediate(() => console.log("Immediate"));
+
+process.nextTick(() => console.log("Next Tick"));
+
+console.log("Hello");

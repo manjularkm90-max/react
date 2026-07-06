@@ -1,0 +1,11 @@
+const fs = require("fs");
+
+app.use((req,res,next)=>{
+
+const log = `${Date.now()} ${req.method} ${req.url}\n`;
+
+fs.appendFileSync("logs.txt",log);
+
+next();
+
+});

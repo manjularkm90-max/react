@@ -1,0 +1,9 @@
+const EventEmitter = require("events");
+
+const event = new EventEmitter();
+
+event.on("login",()=>{
+    console.log("User Logged In");
+});
+
+event.emit("login");
